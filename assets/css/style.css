@@ -15,6 +15,8 @@ html {
 }
 
 body {
+  margin:0;
+  padding:0;
   font-family: "Commissioner", sans-serif;
   background-color: var(--main-bg-color);
   color: var(--primary-type-color);
@@ -25,16 +27,78 @@ img {
 }
 
 .container {
-  width: 576px;
+  width: 450px;
   margin: 0 auto;
+  position:relative;
 }
 
 /* ------- NavBar ------- */
-nav.primary ul {
-  display: flex;
-  padding: 0;
+nav {
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.288);
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-nav li {
-  list-style-type: none;
+.links-container {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+
+  position: absolute;
+  top:0;
+  right:0;
+  z-index: 10;
+  width: 300px;
+
+  background-color: var(--primary-type-color);
+  box-shadow: -5px 0 5px rgba(0,0,0,0.25);
+
 }
+
+nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+
+  height: auto;
+  width:100%;
+  padding: 20px 30px;
+  justify-content: flex-start;
+}
+
+nav a:hover {
+  color: var(--accent-hover);
+}
+
+nav .logo {
+  width:fit-content;
+  margin-right: auto;
+}
+
+nav svg {
+  fill: #fff;
+}
+
+#sidebar-active {
+  display: none;
+}
+
+.open-sidebar-button, .close-sidebar-button{
+  padding: 20px;
+  display: block;
+}
+#sidebar-active:checked ~ .links-container {
+  display: flex;
+}
+#sidebar-active:checked ~ #overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 9;
+}
+

@@ -14,22 +14,29 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Francois+One&display=swap"
-      rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Francois+One&display=swap" rel="stylesheet" />
   </head>
 
   <body>
     <main class="container">
       <section id="header">
         <nav class="primary">
-          <a href="index.html">logo</a>
-          <ul>
-            <li><a href="">Plan a Visit</a></li>
-            <li><a href="">Activities & Events</a></li>
-            <li><a href="">River Levels</a></li>
-            <li><a href="">About Us</a></li>
-          </ul>
+          <a href="#" class="logo">Logo</a>
+          <input type="checkbox" id="sidebar-active">
+          <label for="sidebar-active" class="open-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+          </label>
+          <label for="sidebar-active" id="overlay"></label>
+          <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-button">
+              <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </label>
+          
+          <a href="#">Plan a Visit</a>
+          <a href="#">Activities & Events</a>
+          <a href="#">River Levels</a>
+          <a href="#">About Us</a>
+          </div>
         </nav>
         <h1>Experience Arkansas' Greatest Adventure</h1>
       </section>
