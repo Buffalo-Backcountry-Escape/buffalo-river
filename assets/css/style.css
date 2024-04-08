@@ -2,6 +2,7 @@
   --main-bg-color: #fffcf0;
   --primary-type-color: #26261a;
   --accent-main: #54878c;
+  --accent-secondary: #84B4BF;
   --accent-hover: #d99441;
   --secondary-bg-color: #3F402D;
 }
@@ -184,13 +185,13 @@ nav {
   position:relative;
 
   h2 {
-    color: #84B4BF;
+    color: var(--accent-secondary);
   }
   p {
     font-size: .9rem;
   }
 }
-/* ---- Wave SVGs ---- */
+/* ---- About Section (Wave SVGs) ---- */
 .custom-shape-divider-top-1712460844 {
   position: absolute;
   top: 0;
@@ -243,9 +244,14 @@ nav {
 footer {
   background-color: var(--secondary-bg-color);
   height: 150px;
+  position: relative;
   
   ul {
-    padding: 0;
+    padding: 20px 10px;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
   }
   li {
     list-style-type: none;
@@ -253,4 +259,37 @@ footer {
   a {
     color: var(--main-bg-color);
   }
+  a:hover {
+    color: var(--accent-hover);
+    cursor: pointer;
+  }
+  .copyright {
+    width: 100%;
+    color: var(--main-bg-color);
+    text-align: center;
+    margin-top: 35px;
+  }
+
+  
+}
+
+.custom-shape-divider-bottom-1712598211 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1712598211 svg {
+  position: relative;
+  display: block;
+  width: calc(155% + 1.3px);
+  height: 79px;
+}
+
+.custom-shape-divider-bottom-1712598211 .shape-fill {
+  fill: #84B4BF;
 }
