@@ -306,7 +306,7 @@ footer {
     align-items: center;
   }
   .links-container {
-    width: 80%;
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -428,7 +428,8 @@ footer {
     }
    
     h3 {
-      padding-top: 10px;
+      margin-top: 20px;
+      padding-left: 0;
       grid-area: heading;
       text-align: center;
     }
