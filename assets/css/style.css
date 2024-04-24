@@ -220,7 +220,14 @@ nav {
 }
 
 #overlap {
-  height: 320px;
+  height: fit-content;
+
+  h2{
+    margin-bottom: 25px;
+  }
+  img{
+    margin-bottom: 25px;
+  }
 
 }
 
@@ -365,9 +372,6 @@ footer {
     }
   }
 
-  #overlap {
-    height: 500px;
-  }
 }
 
 @media screen and (min-width: 992px) {
@@ -453,11 +457,12 @@ footer {
   }
 
   #overlap {
-    height: 800px;
 
     img {
-      width: 80vw;
-      margin-left: 100px;
+      width: 70%;
+      margin-left: 200px;
+      max-height: 700px;
+      max-width: 1300px;
     }
   }
 }
