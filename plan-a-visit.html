@@ -23,9 +23,8 @@
 </script>
 <body>
     <main>
-        <section id="header">
           <nav class="primary">
-            <a href="index.html" class="logo">Logo</a>
+            <a href="index.html" class="logo"><img src="assets/img/bf-logo.png" class="logo"></a>
             <input type="checkbox" id="sidebar-active" />
             <label for="sidebar-active" class="open-sidebar-button">
               <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
@@ -44,23 +43,25 @@
               <a href="river-levels.html">River Levels</a>
             </div>
           </nav>
-        </section>
         
-        <section class="container">
-        <h1>Planning a Visit</h1>
-        <p>
-          Get ready to embark on an unforgettable journey as you explore the
-          breathtaking landscapes and exhilarating waters at Buffalo River.
-          Whether you're a seasoned traveler or a first-time adventurer, our
-          destination promises an experience like no other.
-        </p>
-      </section>
+        <section id="intro" class="container">
+          <h1>Planning a Visit</h1>
+          <p>
+            Get ready to embark on an unforgettable journey as you explore the
+            breathtaking landscapes and exhilarating waters at Buffalo River.
+            Whether you're a seasoned traveler or a first-time adventurer, our
+            destination promises an experience like no other.
+          </p>
+        </section>
    
-        <section id="trails-intro" class="container">
-          <h2>Hiking Trails</h2>
-          <div id="responsive-image" class="container">
-            <img src="assets/img/visitingtrails.webp" alt="Buffalo" class="responsive-image"/>
-          </div>
+   
+        <section id="trailsintro" class="container">
+          <h2 id="trails">Visiting Trails</h2>
+            <img class="responsive-image"
+              src="assets/img/visitingtrails.webp"
+              alt="Buffalo"
+              class="responsive-image"
+            />
           <p>
             The park encompasses over 95,000 acres that surround the free-flowing
             Buffalo, much of which is linked together by a growing network of
@@ -88,7 +89,7 @@
             footwear. We hope you have an enjoyable hike!
           </p>
         </section>
-        <section id="trials-cards" class="container">
+        <section id="hiking-cards" class="container">
           <div class="card">
             <img src="assets/img/upper.webp" alt="Upper District" />
             <h3>Upper District</h3>
@@ -116,13 +117,15 @@
           </div>
         </section>
    
-   
-   
    <section id="canoeintro" class="container">
-          <h2>Canoeing & Kayaking</h2>
-          <div id="responsive-image1" class="container">
-            <img src="assets/img/canoe1.webp" alt="Buffalo" class="responsive-image"/>
-          </div>
+          <h2 id="canoe">Canoeing/Kayaking</h2>
+          <section id="responsive-image1" class="container">
+            <img
+              src="assets/img/canoe1.webp"
+              alt="Buffalo"
+              class="responsive-image"
+            />
+          </section>
           <p>
             The Buffalo River flows freely for 151 miles. Typically, the paddle season begins on the upper Buffalo in the spring. More water makes this section attractive for visitors seeking a higher level of challenge with whitewater kayaking. The season moves downstream with the months, varying from month to month with rainfall. Unlike rivers that are fed by perennial springs, the Buffalo is largely rainfall dependent. In dry years, the paddling season is short and quickly moves down into the Middle and Lower Districts. In wet years, use of the upper river is prolonged with paddling opportunities spread out through the park for the entire season.
           </p>
@@ -132,12 +135,12 @@
           <p>
             River levels greater than the indicated levels are unsafe:
           </p>
-            <ul>
-              <li>Ponca gage: 1300 cfs</li>
-              <li>Pruitt/Hwy. 7 gage: 2000 cfs</li>
-              <li>Grinder's Ferry/Hwy. 65 gage: 8000 cfs</li>
-              <li>Dillard's Ferry/Hwy. 14 gage: 9370 cfs</li>
-            </ul>
+          <ul>
+          <li>Ponca gage: 1300 cfs</li>
+          <li>Pruitt/Hwy. 7 gage: 2000 cfs</li>
+          <li>Grinder’s Ferry/Hwy. 65 gage: 8000 cfs</li>
+          <li>Dillard’s Ferry/Hwy. 14 gage: 9370 cfs</li>
+          </ul>
           </p>
           <h3>
             Be Prepared. Plan Ahead.
@@ -180,20 +183,53 @@
              Visit the lower end of the river for year-round paddling opportunities.
             </p>
           </div>
+         
         </section>
    
+   
+         <section id="rent-cards" class="container">
+          <div class="card">
+            <h3>Rent</h3>
+            <p>
+              1 Canoe...........$67.00<br>
+              2 Canoes.........$134.00<br>
+              3 Canoes.........$201.00
+            </p>
+          </div>
+          <div class="card">
+            <h3>Rent</h3>
+            <p>
+              4 Canoes.........$268.00<br>
+              5 Canoes.........$335.00<br>
+              6 Canoes.........$402.00<br>
+              7 Canoes.........$455.00
+            </p>
+          </div>
+          <div class="card">
+            <h3>Rent</h3>
+             <p>
+             8 Canoes.........$536.00<br>
+             9 Canoes.........$603.00 <br>
+            10 Canoes........$670.00
+            </p>
+          </div>
+        </section>
+   
+   
         <section id="zipintro" class="container">
-          <h2>Ziplining</h2>
+          <h2 id="zipline">Ziplining</h2>
           <p>
             Get ready to embark on an unforgettable journey as you explore the
             breathtaking landscapes and exhilarating waters at Buffalo River.
             Whether you're a seasoned traveler or a first-time adventurer, our
             destination promises an experience like no other.
           </p>
+          <p>The tour is for guests ages 7+ and who weigh between 70 and 250 lbs. We zip rain or shine and during rainy day zips the weight limit may be reduced to 200 lbs.</p>
         </section>
+
         <section id="zip-cards" class="container">
           <div class="card">
-            <img src="assets/img/zipline1.webp" alt="Trails" />
+            <img src="assets/img/zipline1.webp" alt="Ziplining" />
             <h3>What is a Zipline Canopy Tour?</h3>
             <p>
               Our canopy tour is a system of cables
@@ -204,7 +240,7 @@
             </p>
           </div>
           <div class="card">
-            <img src="assets/img/zipline2.webp" alt="Canoeing" />
+            <img src="assets/img/zipline2.webp" alt="Ziplining" />
             <h3>How Long Does It Take?</h3>
             <p>
               The tour takes approximately 2 hours to complete, give or take a few
@@ -214,29 +250,40 @@
             </p>
           </div>
         </section>
-        <section id="zipintro" class="container">
-          <p>The tour is for guests ages 7+ and who weigh between 70 and 250 lbs. We zip rain or shine and during rainy day zips the weight limit may be reduced to 200 lbs.
-          </p>
-        </section>
-   
+        
         <footer class="primary">
           <div class="custom-shape-divider-bottom-1712598211">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-              <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-              <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-              <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                opacity=".25"
+                class="shape-fill"
+              ></path>
+              <path
+                d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                opacity=".5"
+                class="shape-fill"
+              ></path>
+              <path
+                d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                class="shape-fill"
+              ></path>
             </svg>
           </div>
           <ul class="links">
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="#">Book a Cabin</a></li>
+            <li><a href="lodging.html">Book a Cabin</a></li>
             <li><a href="#">About Us</a></li>
           </ul>
           <h6 class="copyright">&copy; 2024 Buffalo Backcountry Escape</h6>
         </footer>
       </main>
       <script src="assets/js/script.js"></script>
+    </body>
+   </html>
    
-    
-</body>
-</html>

@@ -9,45 +9,49 @@
   
   html {
     box-sizing: border-box;
-  }
-  *,
-  *:before,
-  *:after {
+   }
+   *,
+   *:before,
+   *:after {
     box-sizing: inherit;
-  }
-  
-  body {
+   }
+   
+   
+   body {
     margin: 0;
     padding: 0;
     font-family: "Commissioner", sans-serif;
     background-color: var(--main-bg-color);
     color: var(--primary-type-color);
-  }
-  
-  img {
-    max-width: 100%;
+   }
+   
+   
+   img {
+    max-width: 450px;
     height: auto;
-  }
-  
-  main {
+   }
+   .responsive-image {
+    max-width: 100%;
+    min-width: 400px;
+    min-height: 300px;
+    max-height: 690px;
+    margin-bottom: 20px;
+   }
+
+   h1{font-size: 2.6rem;}
+   
+   main {
     width: 450px;
     margin: 0 auto;
     position: relative;
-  }
-  
-  .container {
+   }
+   
+   .container {
     padding: 0 20px;
-  }
-
-  h1 {
-    margin: 40px 0;
-    text-align: center;
-    border-bottom: 2px solid var(--accent-main);
-    padding-bottom: 40px;
-  }
-  
-  /* ------- NavBar ------- */
-  nav {
+   }
+   
+   /* ------- NavBar ------- */
+   nav {
     height: 60px;
     background-color: var(--secondary-bg-color);
     display: flex;
@@ -68,86 +72,150 @@
     a:hover {
       color: var(--accent-hover);
     }
-  
     .logo {
-      width: fit-content;
+      height: 50px;
       margin-right: auto;
     }
-  
     svg {
       fill: #fff;
     }
   }
-  
-  .links-container {
+   
+   .links-container {
     display: none;
     flex-direction: column;
     align-items: flex-start;
-  
     position: absolute;
     top: 0;
     right: 0;
     z-index: 10;
     width: 300px;
-  
     background-color: var(--primary-type-color);
     box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
-  }
-  
-  #sidebar-active {
+   }
+   #sidebar-active {
     display: none;
-  }
-  
-  .open-sidebar-button,
-  .close-sidebar-button {
+   }
+   
+   
+   .open-sidebar-button,
+   .close-sidebar-button {
     padding: 20px;
     display: block;
     cursor: pointer;
-  }
-  #sidebar-active:checked ~ .links-container {
+   }
+   #sidebar-active:checked ~ .links-container {
     display: flex;
-  }
-  #sidebar-active:checked ~ #overlay {
+   }
+   #sidebar-active:checked ~ #overlay {
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 9;
+   }
+   
+   
+   #intro {
+    padding: 20px 20px;
+    border-bottom: 2px solid var(--accent-main);
+    max-width: 450px;
+
+    p{max-width: 80%;}
+   }
+   #trailsintro {
+    margin:auto;
+    text-align: center;
+    padding: 20px 20px;
+    margin-top: 20px;
+
+    p{text-align: left;}
+    
+   }
+   
+   
+   #zipintro {
+    text-align: center;
+    padding: 20px 20px;
+    margin-top: 0;
+   }
+   #canoeintro {
+    text-align: center;
+    padding: 20px 20px;
+   }
+   
+   
+   #canoeintro li {
+    list-style-type: none;
+   }
+   
+   
+   
+   /* ----- Cards Section ----- */
+   #hiking-cards, #canoe-cards {
+    margin-top: 40px;
   }
 
-/* ------ River Levels Charts ------ */
-  #chartjs-0{
-    float:left;
-    margin-left:7%;
-    margin-top:2%;
-  }
+  .card {
+    margin-bottom: 25px;
+    text-align: center;
+    
   
-  #chartjs-1{
-    float:right;
-    margin-right:7%;
-    margin-top:2%;
-  }
-  
-  #chartjs-2{
-    float:left;
-    margin-left:7%;
-    margin-top:2%;
-  }
-  
-  #chartjs-3{
-    float:right;
-    margin-right:7%;
-    margin-top:2%;
+    h3 {
+      color: var(--accent-main);
+      margin: 10px 0;
+    }
+    p {
+      margin: 0;
+      padding: 0 20px;
+      font-size: 0.9rem;
+    }
+    img {
+      width: 400px;
+      height: 300px;
+    }
   }
 
-
-  /* ----- Footer ----- */
-footer {
+   
+   
+   #cards3 {
+    .card {
+      text-align: center;
+     }
+   
+    h3 {
+      color: var(--accent-main);
+      margin: 10px 0;
+    }
+    p {
+      font-size: 0.9rem;
+     
+    }
+   
+   
+    img {
+      width: 500px;
+      height: 300px;
+    }
+    #cards5 {
+      margin-top: 0%;
+      max-height: 200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+   }
+   
+   
+   
+   
+   /* ----- Footer ----- */
+   footer {
     background-color: var(--secondary-bg-color);
     height: 150px;
     position: relative;
-  
+   
+   
     ul {
       padding: 20px 10px;
       margin: 0;
@@ -160,7 +228,6 @@ footer {
     }
     a {
       color: var(--main-bg-color);
-      text-decoration: none;
     }
     a:hover {
       color: var(--accent-hover);
@@ -172,9 +239,10 @@ footer {
       text-align: center;
       margin-top: 35px;
     }
-  }
-  
-  .custom-shape-divider-bottom-1712598211 {
+   }
+   
+   
+   .custom-shape-divider-bottom-1712598211 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -182,72 +250,252 @@ footer {
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+   }
+   
+   
+   .custom-shape-divider-bottom-1712598211 svg {
+    position: relative;
+    display: block;
+    width: calc(155% + 1.3px);
+    height: 79px;
+   }
+   
+   
+   .custom-shape-divider-bottom-1712598211 .shape-fill {
+    fill: #84b4bf;
+   }
 
-    svg {
-        position: relative;
-        display: block;
-        width: calc(155% + 1.3px);
-        height: 79px;
-      }
-    .shape-fill {
-      fill: #84b4bf;
-    }
-
-  }
   
-  @media screen and (min-width: 768px) {
+
+   .cabins-intro {
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid var(--accent-main);
+   }
+
+   .slick-container{
+    margin:40px auto;
+    width:70vw;
+    /* Set Max Content Width */
+    max-width:700px;
+}
+
+.fade {
+  width: 450px;
+}
+#cabin-imgs{
+  position: relative;
+}
+
+/* Customize Previous/Next/Dots/Autoplay */
+
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+  color: var(--primary-type-color);
+}
+
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+    color:black;
+}
+   
+   
+   @media screen and (min-width: 768px) {
     main {
       width: 768px;
     }
-  
+    h2 {
+      font-size: 1.6rem;
+    }
+ 
     /* ----- NavBar ----- */
     nav.primary .open-sidebar-button,
-    .close-sidebar-button {
-      display: none;
-    }
-    #sidebar-active {
-      display: none;
-    }
-  
-    nav {
-      height: 80px;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-    }
-    .links-container {
-      width: 60%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-      background-color: #ffffff00;
-      box-shadow: none;
-      position: inherit;
-    }
-  
-    nav a {
-      width: fit-content;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      text-decoration: none;
-    }
-    nav .logo {
-      margin-right: auto;
-    }
-  
-    #header h1 {
-      font-size: 2rem;
-    }
-  
-  
+  .close-sidebar-button {
+    display: none;
   }
-  
-  @media screen and (min-width: 992px) {
+  #sidebar-active {
+    display: none;
+  }
+
+  nav {
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .links-container {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff00;
+    box-shadow: none;
+    position: inherit;
+  }
+
+  nav a {
+    width: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+  }
+  nav .logo {
+    margin-right: auto;
+  }
+  #intro{max-width: 768px;}
+
+  #intro p{
+    max-width: 70%;
+  }
+
+  #rent-cards .card{
+    grid-template-columns: 1fr;
+    margin:auto;
+    height: fit-content;
+
+    h3, p {
+      text-align: center;
+    }
+  }
+   
+   
+  .card {
+    height: 320px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+
+    img {
+      grid-column: 2;
+      grid-row: 1 / span 2;
+    }
+    h3,
+    p {
+      text-align: left;
+    }
+    h3 {
+      padding-left: 20px;
+      grid-column: 1;
+      grid-row: 1;
+    }
+    p {
+      grid-column: 1;
+      grid-row: 2;
+    }
+  }
+   }
+   
+   
+   @media screen and (min-width: 992px) {
     main {
       width: 100%;
     }
 
-  }
+    #intro{max-width:992px;}
+
+#trailsintro{
+  width: 70vw;
+}
+
+      #hiking-cards, #canoe-cards, #rent-cards, #zip-cards {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        margin-bottom: 80px;
+      }
+
+      #zip-cards {
+        padding-bottom: 80px;
+      }
+
+      #rent-cards .card {
+        grid-template-rows: 1fr;
+        height: fit-content;
+      }
+
+      .card {
+        width: 400px;
+        grid-template-columns: 400px 400px 400px;
+        grid-template-rows: 300px 40px 300px;
+        grid-template-areas:
+        "image"
+        "heading"
+        "text";
+    
+        img {
+          grid-area: image;
+        }
+       
+        h3 {
+          margin-top: 20px;
+          padding-left: 0;
+          grid-area: heading;
+          text-align: center;
+        }
+        p {
+          text-align:center;
+          grid-area: text;
+          padding: 20px
+        }
+      }
+
+      .cabins-intro{
+        max-width: 70%;
+      }
+    }
+   
+   
+    #intro {
+      width: 80vw;
+      margin: auto;
+    }
   
+   
+   
+    #zipintro {
+      width: 80vw;
+      margin: auto;
+     
+    }
+    #zipintro2 {
+      padding-bottom: 100px;
+    }
+    #canoeintro {
+      width: 80vw;
+      margin: auto;
+    }
+   
+   
+    #icon-links {
+      flex-direction: row;
+      justify-content: space-around;
+   
+   
+      .icon {
+        width: fit-content;
+        border: none;
+      }
+      h4 {
+        width: fit-content;
+        margin: auto;
+      }
+
+    }
+   
+   
+   
+   
+    

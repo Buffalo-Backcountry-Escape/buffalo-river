@@ -78,8 +78,9 @@ nav {
   }
 
   .logo {
-    width: fit-content;
+    height: 50px;
     margin-right: auto;
+
   }
 
   svg {
